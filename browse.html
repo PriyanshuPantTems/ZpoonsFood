@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Zpoons</title>
+    <link rel="stylesheet" href="browsest.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+    href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"rel="stylesheet"/>
+  
+</head>
+<body>
+   
+
+
+    <header class="header">
+        <nav class="navbar">
+          <div class="row d-flex container">
+            <a href="" class="logo d-flex">
+              <img src="./images/zpoonslogo.png" alt="" height="50px" width="50px" />
+            </a>
+  
+            <ul class="nav-list d-flex">
+              <a href="http://127.0.0.1:5500/index.html">Home</a>
+              <a href="http://127.0.0.1:5500/browse.html">Browse</a>
+              <a href="">Offers</a>
+              <a href="">Zpoons Plus</a>
+              <a href="">Track Order</a>
+  
+              <span class="close d-flex"><i class="bx bx-x"></i></span>
+            </ul>
+  
+            <div class="col d-flex">
+              <form>
+                <input type="search" placeholder="Search your item" />
+                <button class="d-flex"><i class="bx bx-search"></i></button>
+              </form>
+              <div class="cart-icon d-flex">
+                <i class="bx bx-shopping-bag"></i>
+                <span id="cart-count">0</span>
+              </div>
+              <a class="btn signin">Sign In</a>
+            </div>
+  
+            <!-- Hamburger -->
+            <div class="hamburger d-flex">
+              <i class="bx bx-menu"></i>
+            </div>
+          </div>
+        </nav>
+
+    <!-- Menu Section -->
+    <main>
+        <section class="menu-header">
+            <h1>Our Menu</h1>
+            <p>Select your favorite dishes and add them to your cart.</p>
+        </section>
+
+         <!-- Filter Section -->
+         <section class="menu-filters">
+            <button class="filter-button" data-filter="all">All</button>
+            <button class="filter-button" data-filter="healthy">Healthy</button>
+            <button class="filter-button" data-filter="indian">Indian</button>
+            <button class="filter-button" data-filter="chinese">Chinese</button>
+            <button class="filter-button" data-filter="fast-food">Fast Food</button>
+            <button class="filter-button" data-filter="dessert">Dessert</button>
+        </section>
+
+        <!-- Products List -->
+        <section class="menu-items">
+            <div class="item-card" data-category="fast-food all">
+                <img src="images/dish-1.png" alt="Pizza Image">
+                <h3>Pizza 🍕</h3>
+                <p>Delicious cheese pizza with toppings.</p>
+                <p><strong>$10.00</strong></p>
+                <button class="add-to-cart" data-name="Pizza" data-price="10">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="indian all">
+                <img src="images/dish-1.svg"  alt="Biryani Image">
+                <h3>Biryani 🇮🇳</h3>
+                <p>Spicy and flavorful chicken biryani.</p>
+                <p><strong>$12.00</strong></p>
+                <button class="add-to-cart" data-name="Biryani" data-price="12">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="fast-food all">
+                <img src="images/dish-3.png"  alt="Burger Image">
+                <h3>Burger 🍔</h3>
+                <p>Juicy burger with crispy fries.</p>
+                <p><strong>$8.00</strong></p>
+                <button class="add-to-cart" data-name="Burger" data-price="8">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="fast-food all">
+                <img src="images/dish-8.png"  alt="Pasta Image">
+                <h3>Pasta 🍝</h3>
+                <p>Creamy pasta with garlic bread.</p>
+                <p><strong>$9.00</strong></p>
+                <button class="add-to-cart" data-name="Pasta" data-price="9">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="chinese all">
+                <img src="images/dish-9.png"  alt="Sushi Image">
+                <h3>Sushi 🍣</h3>
+                <p>Fresh sushi with soy sauce and wasabi.</p>
+                <p><strong>$15.00</strong></p>
+                <button class="add-to-cart" data-name="Sushi" data-price="15">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="healthy all">
+                <img src="food.png"  alt="Steak Image">
+                <h3>Steak 🥩</h3>
+                <p>Grilled steak with mashed potatoes.</p>
+                <p><strong>$20.00</strong></p>
+                <button class="add-to-cart" data-name="Steak" data-price="20">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="fast-food all">
+                <img src="food.png"  alt="Tacos Image">
+                <h3>Tacos 🌮</h3>
+                <p>Soft-shell tacos with chicken filling.</p>
+                <p><strong>$7.00</strong></p>
+                <button class="add-to-cart" data-name="Tacos" data-price="7">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="healthy all">
+                <img src="food.png"  alt="Salad Image">
+                <h3>Salad 🥗</h3>
+                <p>Fresh garden salad with a vinaigrette dressing.</p>
+                <p><strong>$6.00</strong></p>
+                <button class="add-to-cart" data-name="Salad" data-price="6">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="healthy all">
+                <img src="food.png"  alt="Pancakes Image">
+                <h3>Pancakes 🥞</h3>
+                <p>Fluffy pancakes with syrup and berries.</p>
+                <p><strong>$5.00</strong></p>
+                <button class="add-to-cart" data-name="Pancakes" data-price="5">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="fast-food all">
+                <img src="food.png"  alt="Fries Image">
+                <h3>Fries 🍟</h3>
+                <p>Golden crispy french fries.</p>
+                <p><strong>$4.00</strong></p>
+                <button class="add-to-cart" data-name="Fries" data-price="4">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="fast-food all chinese">
+                <img src="food.png"  alt="Ramen Image">
+                <h3>Ramen 🍜</h3>
+                <p>Hot bowl of miso ramen with noodles.</p>
+                <p><strong>$12.00</strong></p>
+                <button class="add-to-cart" data-name="Ramen" data-price="12">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="healthy all">
+                <img src="food.png"  alt="Falafel Image">
+                <h3>Falafel 🧆</h3>
+                <p>Fried chickpea balls with hummus.</p>
+                <p><strong>$6.00</strong></p>
+                <button class="add-to-cart" data-name="Falafel" data-price="6">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="dessert all">
+                <img src="food.png"  alt="Ice Cream Image">
+                <h3>Ice Cream 🍨</h3>
+                <p>Cold vanilla ice cream with sprinkles.</p>
+                <p><strong>$4.00</strong></p>
+                <button class="add-to-cart" data-name="Ice Cream" data-price="4">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="dessert all">
+                <img src="food.png"  alt="Donuts Image">
+                <h3>Donuts 🍩</h3>
+                <p>Glazed donuts with sugar toppings.</p>
+                <p><strong>$3.00</strong></p>
+                <button class="add-to-cart" data-name="Donuts" data-price="3">Add to Cart</button>
+            </div>
+            <div class="item-card"data-category="dessert all">
+                <img src="food.png"  alt="Donuts Image">
+                <h3>Donuts 🍩</h3>
+                <p>Glazed donuts with sugar toppings.</p>
+                <p><strong>$3.00</strong></p>
+                <button class="add-to-cart" data-name="Donuts" data-price="3">Add to Cart</button>
+            </div>
+        </section>
+
+        <!-- Cart Summary -->
+        <section class="cart-summary">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <div id="cart-total" class="cart-total">
+                <p>Total: $0.00</p>
+            </div>
+            <button id="checkout-button" class="checkout-button">Checkout</button>
+        </section>
+    </main>
+
+
+      <!--=============== SignIn Form ===============-->
+      <div class="wrapper">
+        <form action="" class="form">
+          <h2>SIGN IN</h2>
+
+          <div class="control">
+            <label for="">Enter Email:</label>
+            <input type="email" placeholder="Enter Your Email" />
+          </div>
+          <div class="control">
+            <label for="">Password:</label>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="checkbox d-flex">
+            <input type="checkbox" />
+            <span>Remember Me</span>
+          </div>
+          <button class="btn">Sign In</button>
+          <div class="links">
+            <span>Forgot Password? <a href="">Click Here</a></span>
+            <span>Don't Have An Account? <a href="">Create One</a></span>
+          </div>
+        </form>
+
+        <div class="close-form">
+          <i class="bx bx-x"></i>
+        </div>
+      </div>
+    </header>
+
+    <script src="script.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
